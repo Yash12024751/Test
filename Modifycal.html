@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body bgcolor="pink">
+    <h1 align="center"> MY CALCI</h1>
+    
+    <fieldset>
+
+        <legend>
+            <h1>Select Tag </h1>
+        </legend>
+
+        <form oninput="result.value=  eval (num1.value + operator.value +num2.value)">
+            <input type="number" id="num1" placeholder="Enter First number"> <br><br>
+            <input type="number" id="num2" placeholder="Enter second number">  <br><br>
+            
+            <select name="operator" id="operator">
+                <option>Option</option>
+                <option value="+">Additon</option>
+                <option value="-">Substraction</option>
+                <option value="*">Multiplication</option>
+                <option value="/">Divison</option>
+            </select><br><br> = 
+            
+            <output name="result" id="result" for="num1 num2"></output>
+    </fieldset>
+    </form>
+    <br> <br>
+    <fieldset>
+        <legend><h1>Radio Tag</h1></legend>
+        <form oninput="result.value= eval (num1.value + operator.value +num2.value)">
+
+            <input type="number" id="num1" placeholder="Enter First number"> <br><br>
+            <input type="number" id="num2" placeholder="Enter second number"><br>
+            <input type="radio" name="operator" value="+" checked>Additon <br>
+            <input type="radio" name="operator" value="-">Substraction <br>
+            <input type="radio" name="operator" value="*">Multiplication <br>
+            <input type="radio" name="operator" value="/">Divison <br> = 
+            <output name="result" id="result"></output>
+    </fieldset>
+
+    </form>
+</body>
+
+</html>
