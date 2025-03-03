@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 20px;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #ff9800;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            .navbar ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div style="padding: 20px;">
+        <h1>Welcome to My Website</h1>
+        <p>This is a simple webpage with a navigation bar.</p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+
+            <th>Student ID</th>
+            <th>STUDENT NAME</th>
+            <th>GENDER</th>
+            <th>AGE</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>bt23cse087</td>
+                <td>Yash Raj</td>
+                <td>Male</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>bt23cse087</td>
+                <td>Yash Raj</td>
+                <td>Male</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>bt23cse087</td>
+                <td>Yash Raj</td>
+                <td>Male</td>
+                <td>19</td>
+
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="7" cellpadding="5">
+        <thead>
+
+            <tr>
+                <td>column1</td>
+                <td>column2</td>
+                <td>column3</td>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td rowspan="2">Row1 Cell1</td>
+                <td>row 1 Cell2</td>
+                <td>row 1 Cell3</td>
+            </tr>
+            <tr>
+                <td>row2 cell2</td>
+                <td>row2 cell3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Row3 Cell3</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="6" cellspacing="6">
+        <thead>
+            <tr>
+                <th>NO:</th>
+                <th>FULL NAME</th>
+                <th>POSITION</th>
+                <th>SALARY</th>
+                <th>TYPE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Harsh Raj</td>
+                <td>founder microsoft</td>
+                <td>$1000</td>
+                <td rowspan="4">Company founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td align="center"> Raj</td>
+                <td>founder apple</td>
+                <td>$2000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td align="center"> Raj</td>
+                <td>founder apple</td>
+                <td>$2000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td align="center"> Raj</td>
+                <td>founder apple</td>
+                <td>$2000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="center">Total Expance:</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

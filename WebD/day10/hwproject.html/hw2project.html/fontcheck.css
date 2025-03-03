@@ -1,0 +1,47 @@
+h1 {
+    background-color: brown;
+    height: 100px;
+    align-content: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    border-bottom: solid black 10px
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&family=Playwrite+IT+Moderna:wght@100..400&family=Sigmar&display=swap');
+
+.sigmar-regular {
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .para {
+    color: white ;
+    border: solid red 10px;
+   /* border-style: solid red 10px; */
+   background-color: black;
+   height: 100px;
+   width: 50% ;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+
+  }
+  .outer-container {
+    width: ;
+  }
+  .firstpara {
+    border-style: solid;
+    width: 50%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .secondpara {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+  }

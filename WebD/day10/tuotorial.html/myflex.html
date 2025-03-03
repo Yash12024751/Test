@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container {
+            background-color: lightgreen;
+            margin: 10px;
+            height: 300px;
+            border: 5px solid darkgreen;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            /* gap: 10px; */
+            /* justify-content: space-evenly */
+        }
+
+        .inner-top {
+            background-color: rgb(106, 119, 234);
+            border: 5px solid blue;
+            width: 95%;
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        .top-orange {
+            width: 30%;
+            height: 75%;
+            background-color: rgb(240, 193, 128);
+            margin: 10px
+        }
+
+        .top-middle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top-red {
+            width: 40%;
+            background-color: pink;
+            border: 5px solid red;
+            height: 70%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner-top">
+            <div class="top-orange"></div>
+            <div class="top-orange top-middle">
+                <div class="top-red"></div>
+                <div class="top-red"></div>
+            </div>
+            <div class="top-orange"></div>
+
+        </div>
+        <div class="inner-middle">
+            
+        </div>
+        <!-- <div class="inner-top"></div>
+        <div class="inner-top"></div> -->
+    </div>
+</body>
+
+</html>

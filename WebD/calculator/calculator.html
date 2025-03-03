@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body bgcolor="orange">
+    <h1 align="center">Calcify</h1> 
+    <hr>
+    <h1>Addition</h1> 
+    
+    <form oninput="result.value= parseInt(num1.value) + parseInt(num2.value)">
+    <input type="number"  id="num1" placeholder="Enter First number">
+    <br> + <br>
+        <input type="number" id="num2" placeholder="Enter second number"> <br> =
+        <output name="result" id="result" for="num1 num2"></output>
+        </form>
+        <h1>Subtraction</h1>
+        <form oninput="result.value= parseInt(num1.value) - parseInt(num2.value)">
+            <input type="number"  id="num1" placeholder="Enter First number"> 
+            <br> - <br>
+                <input type="number" id="num2" placeholder="Enter second number"> <br> =
+                <output name="result" id="result" for="num1 num2"></output>
+        </form>
+        <h1>Multiplication</h1>
+        <form oninput="result.value= parseInt(num1.value) * parseInt(num2.value)">
+            <input type="number"  id="num1" placeholder="Enter First number"> 
+            <br> * <br>
+                <input type="number" id="num2" placeholder="Enter second number"> <br> =
+                <output name="result" id="result" for="num1 num2"></output>
+        </form>
+        <h1>Division</h1>
+        <form oninput="result.value= parseInt(num1.value) / parseInt(num2.value)">
+            <input type="number"  id="num1" placeholder="Enter First number"> 
+            <br> / <br>
+                <input type="number" id="num2" placeholder="Enter second number"> <br> =
+                <output name="result" id="result" for="num1 num2"></output>
+            </form>
+        </body>
+    </html>
+    
