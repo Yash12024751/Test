@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="website.css">
+    <style>
+        .skill-container {
+            border: 2px solid rgb(229, 226, 226);
+            height: 274px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            /* flex-wrap: wrap; */
+            top: 843px;
+            left: 83px;
+            gap: 10px;
+
+            width: 1273px;
+            border-radius: 40px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .tag {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 12px;
+            border: 1px solid orange;
+            border-radius: 8px;
+            background-color: white;
+            font-size: 1.3rem;
+        
+        }
+        .tag img {
+            width: 20px;
+            height: 20px;
+        }
+        .left {
+            display: flex;
+            gap: 30px;
+        }
+      .inside-box1 {
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+        /* justify-content: center; */
+      }
+      #day {
+        font-size: 1rem;
+      }
+      #topic {
+        font-size: 2rem;
+      }
+    #content {
+        font-size: 1rem;
+    }
+    .container {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            width: 250px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .card .thumbnail {
+            width: 100%;
+            height: 150px;
+            background: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: red;
+            font-size: 16px;
+        }
+        .card .content {
+            padding: 15px;
+        }
+        .card .content h4 {
+            color: #333;
+            font-size: 16px;
+        }
+        .card .content h3 {
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .card .content p {
+            /* color: #666; */
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="left">
+                <img src="./Ellipse 16.svg" alt="" height="36px" width="36px">
+                Explorin Academy
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#skills" id="color">Skills</a></li>
+                    <li><a href="#progress" id="color">Progress</a></li>
+                    <li><a href="#project" id="color">Project</a></li>
+                    <li><a href="#project" id="color">Education</a></li>
+                    <li id="resume"><a href="#resume" id="color">Resume</a></li>
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+    <section class="section">
+
+        <div class="left-section">
+            Hii,I am Yash Raj <br>
+            <div>At integral part of succes <span id="orange">Explorin Academy</span></div> 
+            <div class="innerDiv">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ratione iure magnam ea, explicabo
+                    ipsa officia incidunt molestias omnis. Saepe reiciendis harum accusantium fugiat recusandae
+                    vero, delectus natus amet beatae.</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="./logo.svg" alt="logo">
+        </div>
+    </section>
+    <section class="skills">
+        <div> MY <span id="skill-color">Skills</span></div>
+        <div class="skill-paragraph">here are some my skills on which i have been working on for the past 2 year
+        </div>
+        <div class="skill-container">
+
+            <div class="row">
+                <div class="tag"><img src="https://s3-alpha-sig.figma.com/img/461d/5593/9f3b4e165fb11ddf7da52f489ac461e7?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FqMlIV8pQ5xn65yDiQs-H~o-4H0ZijhUnEM8EfVq91TLPh5Ppw39Ee2lazeYQkIwzImCj9aDn~Zma5fRuc6ADH4PmXns5Lt6Vt~dY8fXKzWitHGhesuG0MMDnbTJ6aJTZ5V8C0rGTJS9QfsQFV-~MZb4hNoJDz5ZbkTCL7ohlBST0QZA6sVVf9BInm8WRwTRpICsi3PrTa6BxCMj5s~8NzO9-wyrOhHhUDBHlZPOtgldt3PFDc~TR0ZMYB~QCtD8UpOVuztwKouGH7mTiFs9yt4SGkdZJHuOiwfRDdtzwzsQx6jBKj73yE1a95AigXP6FH0daR3dKu1JdTkyVYW49w__"/> Data Science</div>
+                <div class="tag"><img src="https://s3-alpha-sig.figma.com/img/ec7d/e93b/03d0325f434bb0f723549f46c839eb28?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Zzem~iUaToo9f7e4TRar0ZEspWGjRjRcNgYroyhlau0PZtUPSNeYTP3p-C-aCX47IrP00vaW8iduq5R-dNexkmGlWOXUAgPrT3cGFOFWXVw1DuVDnEbkX0mOwbsJdkZIfqaxJpwcx-nJRNkoFC6~lfWYiKVwwSUn0lZY91Yc7ORbUAMIgaSsjD9EneEbl-5WvxY3yldjGS3994le8P3bNZHRrv48ADS0yZTDbZGTCc0CA~W5Jo4crIFORw2DaxyrTHkesVS7QokRhmmk3dTWYEqX~vs9JPTSb0jP3Y4zVs01cwewuExOhiPy636dOHDotkcW5YBikJuBfDAegWUx2A__"/> Machine Learning</div>
+                <div class="tag"><img src="https://img.icons8.com/color/50/000000/html-5.png"/> HTML</div>
+                <div class="tag"><img src="https://img.icons8.com/color/50/000000/react-native.png"/> React</div>
+                <div class="tag"><img src="https://s3-alpha-sig.figma.com/img/9450/0386/3328e5805bae8b171497128815bee04a?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=kV8BOGT~pUENPCkFZK37vXVif0BNwgR8e3GoRgeVlECQgtak0AhC~GG2Ybi5k5HsONC5VCAukFdYAmQlhGMsdvtBnh~xO1wQvWFIgwRCOExenETlifJ4fX2cPGWinL53H3Hkr0ilPJiwshiTlx-FilcnVGmxgHKcqabaP3bvHSuBOqy9oE2pE~WeSNErB8qQ-fyyVF8sETjxui3PED4Eg7608VMBi-Dc~DLrSQbaiCxgihi~vCW0-YEJwUo9idnceCWS8vIp7sCO5E4si-tdoh10kzSdvFhrU8hgzvrk2ghKhSE8tFF6VRQ6ecLIcyzUOXdZgmNdYTO0R6rFs8spEA__"/> NodeJS</div>
+                <div class="tag"><img src="https://s3-alpha-sig.figma.com/img/64dc/9e2d/87e1ffb66f651c08c3d015ef98c17386?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ds4fzkcSYpn7MsIcYqa3xJS0NfaIn7qrt-SYNfCF6CLPIS1nH2YXVNRCMUsuUV006twGiAwJTvZ34APZYLyo6yPBwEFNPA-rzdpI58nHcNiTUxfls3GnejefrbchCIY5SlAsGKQ8C6Cv15kxuy68rMIh5iWjkSeUmCqclBbIEtHxCesl~MbItQ6CGpWMVGmsavXJC2ngyWO8ff6EXUVaZNzwRPave3wkKcByWpR8TnDZvjbKmYTWE28UD1M27OMbw7PMOan0aH7tj6v2t0QPSlVx5EzToGHPnIiSwmssXjRqd4Fw3XZ5LbTvsuax2w1QGHQTM2875h-40YcO2-Wiiw__"/> MongoDB</div>
+                <div class="tag js"><img src="https://img.icons8.com/color/50/000000/javascript.png"/> JavaScript</div>
+            </div>
+            <div class="row">
+                <div class="tag"><img src="https://s3-alpha-sig.figma.com/img/461d/5593/9f3b4e165fb11ddf7da52f489ac461e7?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FqMlIV8pQ5xn65yDiQs-H~o-4H0ZijhUnEM8EfVq91TLPh5Ppw39Ee2lazeYQkIwzImCj9aDn~Zma5fRuc6ADH4PmXns5Lt6Vt~dY8fXKzWitHGhesuG0MMDnbTJ6aJTZ5V8C0rGTJS9QfsQFV-~MZb4hNoJDz5ZbkTCL7ohlBST0QZA6sVVf9BInm8WRwTRpICsi3PrTa6BxCMj5s~8NzO9-wyrOhHhUDBHlZPOtgldt3PFDc~TR0ZMYB~QCtD8UpOVuztwKouGH7mTiFs9yt4SGkdZJHuOiwfRDdtzwzsQx6jBKj73yE1a95AigXP6FH0daR3dKu1JdTkyVYW49w__"/> Data Science</div>
+                <div class="tag"><img src="https://s3-alpha-sig.figma.com/img/ec7d/e93b/03d0325f434bb0f723549f46c839eb28?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Zzem~iUaToo9f7e4TRar0ZEspWGjRjRcNgYroyhlau0PZtUPSNeYTP3p-C-aCX47IrP00vaW8iduq5R-dNexkmGlWOXUAgPrT3cGFOFWXVw1DuVDnEbkX0mOwbsJdkZIfqaxJpwcx-nJRNkoFC6~lfWYiKVwwSUn0lZY91Yc7ORbUAMIgaSsjD9EneEbl-5WvxY3yldjGS3994le8P3bNZHRrv48ADS0yZTDbZGTCc0CA~W5Jo4crIFORw2DaxyrTHkesVS7QokRhmmk3dTWYEqX~vs9JPTSb0jP3Y4zVs01cwewuExOhiPy636dOHDotkcW5YBikJuBfDAegWUx2A__"/> Machine Learning</div>
+                <div class="tag"><img src="https://img.icons8.com/color/50/000000/html-5.png"/> HTML</div>
+                <div class="tag"><img src="https://img.icons8.com/color/50/000000/react-native.png"/> React</div>
+                <div class="tag"><img src="https://s3-alpha-sig.figma.com/img/9450/0386/3328e5805bae8b171497128815bee04a?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=kV8BOGT~pUENPCkFZK37vXVif0BNwgR8e3GoRgeVlECQgtak0AhC~GG2Ybi5k5HsONC5VCAukFdYAmQlhGMsdvtBnh~xO1wQvWFIgwRCOExenETlifJ4fX2cPGWinL53H3Hkr0ilPJiwshiTlx-FilcnVGmxgHKcqabaP3bvHSuBOqy9oE2pE~WeSNErB8qQ-fyyVF8sETjxui3PED4Eg7608VMBi-Dc~DLrSQbaiCxgihi~vCW0-YEJwUo9idnceCWS8vIp7sCO5E4si-tdoh10kzSdvFhrU8hgzvrk2ghKhSE8tFF6VRQ6ecLIcyzUOXdZgmNdYTO0R6rFs8spEA__"/> NodeJS</div>
+                <div class="tag"><img src="https://s3-alpha-sig.figma.com/img/64dc/9e2d/87e1ffb66f651c08c3d015ef98c17386?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ds4fzkcSYpn7MsIcYqa3xJS0NfaIn7qrt-SYNfCF6CLPIS1nH2YXVNRCMUsuUV006twGiAwJTvZ34APZYLyo6yPBwEFNPA-rzdpI58nHcNiTUxfls3GnejefrbchCIY5SlAsGKQ8C6Cv15kxuy68rMIh5iWjkSeUmCqclBbIEtHxCesl~MbItQ6CGpWMVGmsavXJC2ngyWO8ff6EXUVaZNzwRPave3wkKcByWpR8TnDZvjbKmYTWE28UD1M27OMbw7PMOan0aH7tj6v2t0QPSlVx5EzToGHPnIiSwmssXjRqd4Fw3XZ5LbTvsuax2w1QGHQTM2875h-40YcO2-Wiiw__"/> MongoDB</div>
+                <div class="tag js"><img src="https://img.icons8.com/color/50/000000/javascript.png"/> JavaScript</div>
+            </div>
+            <div class="row">
+                <div class="tag css"><img src="https://img.icons8.com/color/50/000000/css3.png"/> CSS</div>
+                <div class="tag sql"><img src="https://s3-alpha-sig.figma.com/img/7896/c02e/ac12533983c399eac4cf30cf3b1b2630?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cZ8tc7T1hjpQkIMlDnCEdfCxslMFeYB7X7JbSSGE3tIcX7K3D7lZuhIUkVRvP2iJ2ljoBWuulQfxTIJsXOFAN57hMZ-FV1ukpv8mwK-7WzfcRJlOhy1OpNj2WiQsIy5MuaTXc7nhFrskl44kbbI130bms1vHSr4hYaOXR16f6RHN9Q5sxsrA3X04L5m~lmiWN6QQc71~B6~Nj-DB5l-~q4jrkmDLSIJfeQAnG~tz6wtgaOBRZalW8VLxC1Qg7Trh6c~usQ8lUdfk4yNVrcalsc5s7f5o9SKQy1LOuNbf6-yPrGJO7eNz8YKDVgwCFl7hVkNBIJ4IKCQOgIMB7YuN8A__"/> SQL</div>
+                <div class="tag firebase"><img src="https://img.icons8.com/color/50/000000/firebase.png"/> Firebase</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="video">
+        <div class="progress"> My Video <span id="progress-color">Progress</span></div>
+        <div class="progress-para">Here is a quick demo of my progress so far in web devlopment!</div>
+        <div id="linked-button">Visit My Linkedin</div>
+        <div class="container">
+            <div class="card">
+                <div class="thumbnail">Youtube Video</div>
+                <div class="content">
+                    <h4>Day 1</h4>
+                    <h3>Topic 1</h3>
+                    <p>with coach Mr. XYZ</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">Youtube Video</div>
+                <div class="content">
+                    <h4>Day 2</h4>
+                    <h3>Topic 2</h3>
+                    <p>with coach Mr. XYZ</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="thumbnail">Youtube Video</div>
+                <div class="content">
+                    <h4>Day 3</h4>
+                    <h3>Topic 3</h3>
+                    <p>with coach Mr. XYZ</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="progress-box">
+            <div class="box">1
+                <div class="inner-box">
+
+                    <div id="inside-box">
+                        Youtube Video
+                        <div class="inside-box1">
+                            <p id="day">Day 1</p>
+                            <p id="topic">topic 1</p>
+                            <p id="content">ith coach Mr xyz</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="box">2
+                <div class="inner-box2"></div>
+            </div>
+            <div class="box">3
+                <div class="inner-box3"></div>
+            </div>
+
+        </div> -->
+    </section>
+    <div class="project">
+        <div class="project-container" id="project-id">Project
+            <div id="project-para">I have Worked on a wide range of project .here are some of my project</div>
+            <div class="container">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1572177812156-58036aae439c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D"" alt="Project Image">
+                    <div class="card-content">
+                        <h2>Project Name</h2>
+                        <h3>About the Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam, quam euismod hac in id mauris, scelerisque.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1572177812156-58036aae439c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D"" alt="Project Image" >
+                    <div class="card-content">
+                        <h2>Project Name</h2>
+                        <h3>About the Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam, quam euismod hac in id mauris, scelerisque.</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1572177812156-58036aae439c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D"" alt="Project Image">
+                    <div class="card-content">
+                        <h2>Project Name</h2>
+                        <h3>About the Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam, quam euismod hac in id mauris, scelerisque.</p>
+                    </div>
+                </div>
+            </div>
+                <!-- <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1572177812156-58036aae439c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="" height="300px" width="245.47px" id="project-img1">
+
+
+                    <img src="https://images.unsplash.com/photo-1572177812156-58036aae439c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="" height="300px" width="245.47px" id="project-img1">
+
+
+                    <img src="https://images.unsplash.com/photo-1572177812156-58036aae439c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="" height="300px" width="245.47px" id="project-img1">
+
+                </div> -->
+
+
+            </div>
+        </div>
+    
+    <section class="Education-class">
+        <div class="education-tag">Education
+            <div class="education-para">my education has been a journey of self-discovery and growth.<div class="para">
+                    hera are some detail.</div>
+            </div>
+            <div class="education-container">
+                <div class="b-tech">Explorin Academy
+                    <div id="year">2023-24</div>
+                    <div id="course">B-Tech | Computer Science</div>
+                </div>
+                <div class="b-tech">
+                    College Name
+                    <div id="year">2023-24</div>
+                    <div id="course">B-Tech | Computer Science</div>
+                </div>
+                <div class="b-tech">
+                    School Name
+                    <div id="year">2023-24</div>
+                    <div id="course">12th</div>
+                </div>
+                <div class="b-tech">
+                    School Name
+                    <div id="year">2023-24</div>
+                    <div id="course">10th</div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        <section class="contact-floder">
+            <div class="contact-file">
+                contact us
+                <div id="contact-text">feel free to reach out to me for any questions or opportunities!
+
+                    <div class="visit-contact">
+                        <div id="linkedin">
+                            <img src="./logo1.svg" alt="" height="29px" width="32px" id="img1">
+                            linkedin
+                        </div>
+
+                        <div id="gmail">
+                            <div id="inside-gmail">
+                                <img src="./logo2.svg" alt="" width="34px" height="29px" id="img2">
+                                riyaprajapati@gmail.com
+                            </div>
+
+                        </div>
+                        <div id="github">
+                            <img src="./logo3.svg" alt="" width="30px" height="30px" id="img3">
+                            Github
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
