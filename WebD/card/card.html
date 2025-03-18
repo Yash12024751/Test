@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .outer-border {
+            /* border: 10px solid black; */
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inner-container {
+            /* border: 5px solid rgb(152, 22, 122); */
+            background-color: #43515a;
+            border-radius: 35px;
+            width: 300px;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow: hidden;
+        }
+
+        .logo {
+            position: absolute;
+            top: 80px;
+            border: 10px solid #c84385;
+            border-radius: 100%;
+            width: 114px;
+            height: 114px;
+
+        }
+
+        .pick {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+
+        .content {
+            margin-top: 90px;
+            font-family: 'Times New Roman', Times, serif;
+            width: 290px;
+            height: 136px;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #c84385;
+        }
+
+        #email {
+            color: #ada3a3;
+        }
+
+        .skill {
+            color: rgba(223, 223, 223, 0.905);
+        }
+
+        .footer {
+            /* border: 2px solid ; */
+            display: flex;
+            align-items: center;
+            /* gap: 20px; */
+            justify-content: space-around;
+            margin: 100px;
+            width: 290px;
+            height: 10px;
+        }
+
+        .img1 {
+            width: 50px;
+            height: 50px;
+            background-color: #c84385;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* margin-left: 18px; */
+        }
+
+        .anchor {
+            height: 20px;
+            width: 19px;
+        }
+
+        #twit {
+            width: 16px;
+            height: 20px;
+        }
+
+        .img2 {
+            width: 50px;
+            height: 50px;
+            background-color: #c84385;
+            border-radius: 50px;
+            margin-left:10px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img3 {
+            width: 50px;
+            height: 50px;
+            background-color: #c84385;
+            margin:5px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .follower {
+            /* border: 2px solid; */
+            background-color: #c84385;
+            width: 300px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(223, 223, 223, 0.932);
+        }
+    </style>
+</head>
+
+<body bgcolor="gray">
+    <header>
+        <div class="outer-border">
+            <div class="inner-container">
+                <div class="logo">
+                    <img src="./yash.pic.jpg" alt="" class="pick">
+                </div>
+                <div class="content">
+                    <h2>Yash Raj</h2>
+                    <h4 id="email">bt23cse087shivalikcollege.edu.in</h4>
+                    <p class="skill">Develpor | Designer</p>
+                </div>
+                <div class="footer">
+                    <div class="img1">
+                            <a href="https://www.instagram.com/accounts/login/?hl=en">
+                            <img src="./img.svg" alt="" class="anchor">
+                        </a>
+
+                        </div>
+                        <div class="img2">
+                            <a href="https://x.com/i/flow/login?lang=en">
+
+                                <img src="./img2.svg" alt="" id="twit">
+                            </div>
+                        </a>
+
+                <div class="img3">
+                    <a href="https://studio.youtube.com/channel/UCZnsQ7C0S0f8AtlNMfHDljw">
+
+                        <img src="./img3.svg" alt="" width="17px">
+                    </a>
+                </div>
+                <div class="img3">
+                    <a href="https://www.linkedin.com/feed/">
+
+                        <img src="./img4.svg" alt="" width="17px">
+                    </a>
+                </div>
+
+            </div>
+            <div class="follower">
+                <p> 109 follower | 127 following</p>
+            </div>
+        </div>
+        </div>
+    </header>
+</body>
+
+</html>
