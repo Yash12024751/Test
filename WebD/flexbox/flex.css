@@ -1,0 +1,109 @@
+.container {
+    background-color: purple;
+    /* border: 3px solid black; */
+    /* display: flex; */
+    
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    height:1000px;
+
+    font-size: 4em;
+    color: bisque;
+    text-align: center;
+}
+.inner-container{
+    border: 3px soild pink;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.box0 {
+    border: 3px solid rgb(215, 14, 14);
+    background-color: aqua;
+    height: 100px;
+    width: 300px;
+    margin: 10px;
+}
+
+.box1 {
+    border: 3px solid rgb(14, 14, 14);
+    background-color: rgb(114, 110, 110);
+    height:100px;
+    width: 300px;
+    margin: 10px;
+}
+
+.box2 {
+    border: 3px solid sandybrown;
+    background-color: skyblue;
+    height: 100px;
+    width: 300px;
+    margin: 10px;
+}
+
+.inner-line {
+    display: flex;
+    align-items: center;
+justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+
+    /* gap: 10px; */
+}
+.outer-line{
+    border: 3px solid;
+    background-color:black;
+    text-transform:uppercase;
+
+}
+
+#box1 {
+    background-color: brown;
+    border: 3px solid red;
+    height: 100px;
+    width: 300px;
+}
+
+#box2 {
+    background-color: rgb(27, 204, 77);
+    border: 3px solid black;
+    height: 100px;
+    width: 300px;
+}
+
+#box3 {
+    background-color: blanchedalmond;
+    height: 100px;
+    width: 300px;
+}
+
+.flex-wrap{
+    /* border: 3px solid black; */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    height: 50px;
+    /* width: 500px; */
+}
+
+.outer-box1{
+    background-color: gold;
+    width: 300px;
+}
+
+.outer-box2{
+    background-color: blue;
+    width: 300px;
+}
+.outer-box3 {
+    background-color: rgb(224, 22, 22);
+    width: 300px;
+}
