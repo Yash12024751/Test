@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box {
+            border: 2px solid black;
+            margin: 10px;
+        } */
+        .parent {
+            border: 2px solid red;
+        }
+
+        .child {
+            border: 2px solid black;
+            background-color: red;
+            margin: 50px;
+            padding: 40px;
+        }
+
+        .grandfather {
+            border: 2px solid green;
+            margin: 20px;
+            padding: 50px;
+        }
+
+        div p {
+            text-align: center;
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <div class="grandfather">
+            <p>this is grandfather</p>
+            <div class="parent">
+                <p>this is parent</p>
+                <div class="child">
+                    <p>this is a child</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="./dom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Box Color Generator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .parent {
+      width: 100%;
+      height: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .child {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+    .box {
+      border: 2px solid green;
+      height: 30vh;
+      width: 200px;
+      text-align: center;
+      line-height: 30vh;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <div class="child">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 4</div>
+    </div>
+    <button onclick="changeColors()">Change Colors</button>
+  </div>
+
+  <script>
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function changeColors() {
+      const boxes = document.querySelectorAll('.box');
+      boxes.forEach(box => {
+        const randomColor = getRandomColor();
+        box.style.backgroundColor = randomColor;
+        box.innerText = randomColor;
+      });
+    }
+  </script>
+
+</body>
+</html>

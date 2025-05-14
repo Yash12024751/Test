@@ -10,171 +10,766 @@
         * {
             margin: 0;
             padding: 0;
-            border: border box;
+            box-sizing: border-box;
         }
 
-        .nav {
-
-            background-color: #ffff;
-            border: 5em solid white;
-            width: 1024px;
-            height: 592px;
-
+        body {
+            background-color: rgb(200, 219, 250);
+            /* background-image: url(https://quickshare.samsungcloud.com/ls/public/v1/links/1742617092115LuBrPMq/contents/b48c91b006d411f0ba496ebadbf4d29d/resized/1280?signature=KBNoHMgUK6vfyaIajYqss8v8IObbKY2LR_eDRbY0UEh-2xdJa-pOMtaeyIP-i36sWeqMCG3NFP56_xACYrEQW4uWbN4M77Qba6RhlV4UH1EfbS3BpgEhKa9IUJMJ83PF7ntKXjlRMjZiDSFLMWX2wA&storageType=file);
+            background-repeat: no-repeat; */
         }
 
-        .conatiner {
-            background-color: rgb(219, 219, 237);
-            height: 592px;
-            width: 758px;
-        }
-
-        .stak {
+        #hero {
+            /* border: 2px solid red; */
+            height: 100vh;
+            width: 100vw;
             display: flex;
+            overflow: scroll;
+            scrollbar-width: none;
+        }
+
+        .left-container {
+            height: 100%;
+            /* border: 5px solid blue; */
+            width: 70%;
+            min-width: 900px;
+        }
+
+        .right-container {
+            height: 100%;
+            width: 30%;
+            min-width: 350px;
+            /* border: 5px solid yellow; */
+        }
+
+        header {
+            height: 50px;
+            /* border: 5px solid purple; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            /* padding: 0px 10px 0px 10px; */
+        }
+
+        header div {
+            display: flex;
+            gap: 20px;
+            /* border: 1px solid red; */
+        }
+
+        .underline {
+            border-bottom: 2px solid gray;
+            text-align: center;
+            width: 55px;
+        }
+
+        .left-box {
+            display: flex;
+            gap: 25px;
+            padding: 25px;
+            width: 100%;
+            height: 350px;
+            /* border: 5px solid yellow; */
+        }
+
+        .left-cardano {
+            /* border: 2px solid red; */
+            width: 33%;
+            background-color: white;
+            height: 100%;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* height: 40%; */
+        }
+
+        .right-cardano {
+            /* border: 2px solid green; */
+            height: 100%;
+            /* 300px */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* flex-grow: 1; */
+            /* width: 50%; */
+            gap: 30px;
+            /* width: 500px; */
+            width: 33%;
+            /* height: 50%; */
+        }
+
+        .box1 {
+            background-color: white;
+            border-radius: 10px;
+            /* border: 1px solid black; */
+            /* width:200px; */
+            /* width: 33%;  */
+
+            height: 1000px;
+        }
+
+        .blue-card-container {
+            width: 100%;
+            /* border: 5px solid red; */
+            height: 350px;
+            padding: 25px;
+        }
+
+        .blue-card {
+            background-color: rgb(13, 155, 237);
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .reward-box {
+            /* border: 2px solid #ff0000; */
+            padding: 30px;
+            width: 100%;
+            height: 300px;
+        }
+
+
+
+        .stake-item {
+            display: flex;
+            width: 100%;
+            /* height: 10%; */
+            padding: 30px 30px 0px 0px;
+            justify-content: space-evenly;
+            /* border: 1px solid red; */
+        }
+
+        .stake-item p {
+            color: rgb(171, 167, 167);
+        }
+
+        .month {
+            display: flex;
+            padding: 30px 30px 0px 0px;
+            align-items: center;
             justify-content: space-evenly;
         }
 
-        .active border {
-            border: none;
+
+
+        .active {
+            /* border: 4px solid green; */
+            margin: 20px 20px 0px 0px;
+            width: 100%;
+            height: 500px;
         }
 
-        p span {
-            font-size: 1.2rem;
-            font-weight: 700;
+
+        .locked-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            /* border: 2px solid rgb(0, 255, 136); */
         }
 
-        p u {
-            font-size: 0.8rem;
+        .interst-container {
+            /* margin: 20px 20px 0px 0px; */
+            /* padding: 20px; */
+            /* border: 2px solid black; */
+            width: 100%;
+            /* height: 414px; */
         }
 
-        p {
-            font-size: 0.8rem;
+        .interst-box {
+            margin-top: 20px;
+            /* border: 2px solid red; */
+            height: 445px;
+            width: 100%;
+            display: flex;
         }
 
-        .staking-container1 {
+        .int-box {
+            display: flex;
+            justify-content: space-between;
+            /* border: 2px solid red; */
+            margin-top: 50px;
+            padding: 8px;
+        }
+
+        .graph {
+            padding: 5px;
+            margin-top: 8px;
+            /* margin-bottom: 8px; */
+            width: 100%;
+            height: 443px;
+            border-radius: 20px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 10px 0px 10px;
+        }
+
+        .left-card-box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-top {
             display: flex;
             align-items: center;
             gap: 20px;
+            justify-content: space-between;
         }
 
-        .cardano {
-            border: 1rem solid white;
-            background-color: white;
-            flex-direction:column ;
-            gap: 30px;
-            width: 150px;
-            height: 200px;
+        .left-top div {
+            width: 100%;
+        }
+
+        .left-top img {
+            width: 40px;
+            height: 40px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+
+        .percentage {
+            /* border: 2px solid;  */
+        }
+
+        .stake-button {
+            border: 2px solid;
+            background-color: rgb(25, 25, 247);
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .inner-box {
             display: flex;
             margin-top: 10px;
-            margin-left: 30px;
-            flex-wrap: wrap;
-
-        }
-
-        .cardano-box {
-            display: flex;
-
-            gap: 6px;
-            display: grid;
-            grid-template-columns: repeat(3, 4fr);
-            margin-top: 10px;
-            align-items: center;
-
-        }
-
-        .anuual {
-            /* display: flex; */
+            /* padding: 20px; */
             justify-content: space-evenly;
         }
-     
-        .grid {
 
-            display:grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 10px;
+        .stake {
+            border: 2px solid;
+            display: flex;
+            margin: 20px;
 
         }
-        .box1 {
-            border: 1rem solid white;
-            background-color: #ffff;
-            height: 80px;
-            width: 160px;
+
+        .min-stake {
+            display: flex;
+            justify-content: space-around;
+            /* gap: 60px; */
+            /* flex-direction: column; */
+
+            margin: 10px;
+        }
+
+        .ont-box {
+            margin: 20px 0px 40px 30px;
+        }
+
+        .my-card {
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+        }
+
+        .inner-card {
+            display: flex;
+            padding: 30px;
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+        .number {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 10px 0px 10px;
+        }
+
+        .top-up {
+            /* border: 2px solid; */
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 30px 10px 10px 0px;
+            height: 50px;
+        }
+
+        .up-wallet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid black; */
+            height: 40px;
+            width: 130px;
+            border-radius: 5px;
+            color: black;
+            background-color: white;
+        }
+
+        .transfer {
+            border: 1px solid white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 130px;
+            height: 40px;
+        }
+
+        .active-box {
+            /* display: flex; */
+            /* flex-direction: column; */
+            margin: 10px 0px 20px 0px;
+            background-color: white;
+            border-radius: 10px;
+            /* border: 2px solid orange; */
+            height: 430px;
+        }
+
+        .select-box {
+            display: flex;
+            /* flex-direction: column; */
+            /* align-items: center; */
+            /* justify-content: space-evenly; */
+            /* margin: 20px; */
+            /* border: 2px solid red; */
+            width: 100%;
+        }
+
+        .inner-select {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 200px;
+            height: 375px;
+            /* border: 2px solid black; */
+        }
+
+        .footer {
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 50px;
+        }
+
+        .onto-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            /* border: 3px solid green; */
+        }
+
+        .inner-footer {
+            display: flex;
+            gap: 20px;
+        }
+
+        .cancel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(153, 152, 152);
+            border-radius: 5px;
+            height: 30px;
+            /* width: 20%; */
+            /* text-align: center; */
+        }
+
+        .approval {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: rgba(12, 156, 253, 0.771);
+            border-radius: 5px;
+            /* border: 2px solid blue; */
+        }
+
+        .mydrop {
+            display: flex;
+            gap: 5px;
+            padding-top: 10px;
+        }
+
+        div p span {
+            color: blue;
+            font-size: 1rem;
+        }
+
+        .staking-container {
+            /* border: 6px solid #808080; */
+            /* padding: 10px; */
+            width: 100%;
+            height: 40%;
+        }
+
+        .container-reward {
+            display: flex;
+            /* margin-right: 10px; */
+            /* gap: 30px; */
+            /* justify-content: space-between; */
+            /* margin: 30px 20px 0px 5px; */
+            background-color: white;
+            border-radius: 10px;
+            /* border: 4px solid blue; */
+            width: 100%;
+            height: 200px;
+        }
+
+        .inner-reward {
+
+            margin: 20px 0px 30px 0px;
+            background-color: white;
+            /* border: 3px solid black; */
+            border-radius: 10px;
+            width: 100%;
+            height: 130px;
+        }
+
+        .asset-box {
+            border: 1px solid black;
+            /* display: flex; */
+            width: 100%;
+            margin: 10px;
+            padding: 20px;
+            height: 170px;
+            /* justify-content: space-between; */
+            /* flex-direction: column; */
+        }
+
+        /* .Ont-box {
+            border: 1px solid red;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            /* justify-content: space-evenly; */
+        
+
+        .set {
+            display: flex;
+            margin: 10px;
+            justify-content: space-between;
+        }
+        .my-rewards {
+            margin: 10px;
+            /* padding: 10px; */
+            display: flex;
+            justify-content: space-between;
         }
         .box2 {
-            border: 1rem solid white;
-            background-color: #ffff;
-            height: 80px;
-            width: 160px;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
         }
         .box3 {
-            border: 1rem solid white;
-            background-color: #ffff;
-            height: 80px;
-            width: 160px;
-        }
-        .box4 {
-            border: 1rem solid white;
-            background-color: #ffff;
-            height: 80px;
-            width: 160px;
+            margin: 10px;
+            color: rgb(57, 159, 247);
         }
     </style>
 </head>
 
 <body>
-    <header class="nav">
-        <div class="conatiner">
-            <div class="stak">
-                <div class="staking-container1">
-
-                    <p><span>Staking offerings</span></p>
-                    <p><u>locked staking</u></p>
-                    <p>Defi staking</p>
-                    <p>
-                        <select name="" id="">
-                            <option class="active border">Active</option>
-                        </select>
-                    </p>
+    <section id="hero">
+        <main class="left-container">
+            <header>
+                <strong>Staking offerings</strong>
+                <div>
+                    <p class="underline">Locked</p>
+                    <p>defi</p>
                 </div>
-                <p><span>Staking wallet</span></p>
-                <p>
-                    <select name="" id="">
-                        <option>USDT</option>
-                    </select>
-                </p>
+                <p>active</p>
+            </header>
+            <div class="left-box">
+                <div class="left-cardano">
+                    <div class="left-top">
+                        <img src="./Screenshot 2025-03-25 013200.png" alt="logo">
+                        <div class="">
+                            <div class="left-card-box">
+                                <strong>Cardano</strong>
+                                <p>APY</p>
+                            </div>
+                            <div class="left-card-box">
+                                <p>ADA</p>
+                                <p>8.65%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="percentage">
+                        <p>30.45%</p>
+                        <p>Anual percentage yield</p>
+                    </div>
+                    <div class="percentage">
+                        <p>100 ADA</p>
+                        <p>Minimum Stake</p>
+                    </div>
+                    <div class="stake-button">
+                        <p>Stake Now</p>
+                    </div>
+                </div>
+                <div class="right-cardano">
+                    <div class="box1">
+                        <div class="inner-box">
+                            <strong>Ontology</strong>
+                            <p>APY</p>
+                        </div>
+
+                        <div class="inner-box">
+                            <p>ONT</p>
+                            <p>7.46%</p>
+                        </div>
+
+
+                        <div class="min-stake">
+                            <p>Min.stake</p>
+                            <p>Stake Now</p>
+                        </div>
+                        <strong class="ont-box">100 ONT</strong>
+
+                    </div>
+                    <div class="box1">
+                        <div class="inner-box">
+                            <strong>Ontology</strong>
+                            <p>APY</p>
+                        </div>
+                        <div class="inner-box">
+                            <p>ONT</p>
+                            <p>7.46%</p>
+                        </div>
+                        <div class="min-stake">
+                            <p>Min.stake</p>
+                            <p>Stake Now</p>
+                        </div>
+                        <strong class="ont-box">100 ONT</strong>
+
+
+                    </div>
+                </div>
+                <div class="right-cardano">
+                    <div class="box1">
+                        <div class="inner-box">
+                            <strong>Ontology</strong>
+                            <p>APY</p>
+                        </div>
+                        <div class="inner-box">
+                            <p>ONT</p>
+                            <p>7.46%</p>
+                        </div>
+                        <div class="min-stake">
+                            <p>Min.stake</p>
+                            <p>Stake Now</p>
+                        </div>
+                        <strong class="ont-box">100 ONT</strong>
+
+
+                    </div>
+                    <div class="box1">
+                        <div class="inner-box">
+                            <strong>Ontology</strong>
+                            <p>APY</p>
+                        </div>
+                        <div class="inner-box">
+                            <p>ONT</p>
+                            <p>7.46%</p>
+                        </div>
+                        <div class="min-stake">
+                            <p>Min.stake</p>
+                            <p>Stake Now</p>
+                        </div>
+                        <strong class="ont-box">100 ONT</strong>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="reward-box">
+                <strong>Rewards Query </strong>
+                <div class="inner-reward">
+                    <div class="stake-item">
+                        <p>Staked Assets</p>
+                        <p>Stake Amount</p>
+                        <p>Stake Period</p>
+                        <p>Estimated Rewards</p>
+
+                    </div>
+                    <div class="month">
+                        <strong>Ontology</strong>
+                        <strong>300025.45 ONT</strong>
+                        <strong>6 Month</strong>
+                        <strong>400025015 ONT</strong>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="active">
+                <div class="locked-box">
+
+                    <strong>Staking Activation</strong>
+                    <div class="mydrop">
+                        <p>Locked</p>
+                        <img src="./img.svg" alt="" width="20px" height="20px">
+                    </div>
+                </div>
+                <div class="active-box">
+                    <div class="select-box">
+                        <div class="inner-select">
+                            <p> Select Asset</p>
+                            <p>Lock-Up Periods</p>
+                            <p>Amount to stake</p>
+                            <p>Stake Validator</p>
+                            <p>Reward Claiming</p>
+                        </div>
+                        <div class="onto-box">
+                            <strong>Ontology</strong>
+                            <strong>6 Month</strong>
+                            <strong>30035.64 ONT</strong>
+                            <strong>Pos Blockchain</strong>
+                            <strong>6 Month</strong>
+                        </div>
+                        <div class="drop-down">
+                            <img src="./img.svg" alt="" width="20px" height="30px">
+                            <img src="./img.svg" alt="" width="20px" height="30px">
+                            <img src="./img.svg" alt="" width="20px" height="30px">
+                            <img src="./img.svg" alt="" width="20px" height="30px">
+                            <img src="./img.svg" alt="" width="20px" height="30px">
+                        </div>
+                        <div class="summary">
+                            <strong>Summary</strong>
+                        </div>
+                        <div class="stake-date">
+                            <p>Stake Date</p>
+                            <p>Interest Period</p>
+                            <p>Stake End Date</p>
+                            <p>Redemption Date</p>
+                            <p>Est.Apy</p>
+                            <p>Estimated Interest</p>
+                        </div>
+                        <div class="date">
+                            <p>2024-02-15 05:32</p>
+                            <p>6 Month</p>
+                            <p>2024-08-15 05:32</p>
+                            <p>2024-08-20</p>
+                            <p>25.12%</p>
+                            <p>4025.506 ONT</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="inside-footer">
+                            <p>Custom Staking</p>
+                        </div>
+                        <div class="inner-footer">
+                            <div class="cancel">
+                                <p>Cancel Staking</p>
+                            </div>
+                            <div class="approval">
+
+                                <sapn>Approve Staking</sapn>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
-            <div class="cardano ">
-                <div class="cardano-box">
-                    <p>Cardano ADN</p>
+        </main>
+        <aside class="right-container">
+            <header>
 
-                    <p>APY 8.65</p>
+                <strong> Staking Wallet</strong>
+                <p>USDT</p>
+            </header>
+            <div class="blue-card-container">
+                <div class="blue-card">
+                    <div class="my-card">
+
+                        <p>AVBL. BALANCE</p> <br>
+                        <b>68,750,904.45 USDT</b>
+                    </div>
+                    <div class="inner-card">
+                        <p>Staked</p>
+                        <p>Reward Claimed</p>
+                    </div>
+                    <div class="number">
+                        <b>2,32,64,8967 USDT</b>
+                        <b>1,32,64.8967 USDT</b>
+                    </div>
+                    <div class="top-up">
+                        <div class="up-wallet">
+                            <strong>Top up wallet</strong>
+                        </div>
+                        <div class="transfer">
+                            <p>Transfer</p>
+                        </div>
+
+                    </div>
 
 
-                </div>
-
-                <div class="anuual">
-                    <p>30.45%</p>
-                    <p>
-                    <div>Anual percenatge yield</div>
-                    </p>
-                </div>
-                <div class="minimum">
-                    <p>100 ADA</p>
-                    <p>
-                    <div>Minimum Stake</div>
-                    </p>
-                </div>
-                
-                <div class="grid">
-                   <div class="box1"></div>
-                   <div class="box2"></div>
-                   <div class="box3"></div>
-                   <div class="box4"></div>
                 </div>
             </div>
 
-        </div>
-    </header>
+
+            <div class="staking-container">
+                <div class="stake">
+
+                    <strong>Staking Reward</strong>
+                </div>
+                <div class="container-reward">
+                    <div class="asset-box">
+                        <div class="set">
+
+                            <p>Stake Asset</p>
+                            <strong>ONT</strong>
+                        </div>
+                        <div class="my-rewards">
+                            <p>Reward to be Claimed</p>
+                            <p>Next Claim to be Available In</p>
+                        </div>
+                        <div class="box2">
+                            <strong>12.15 ONT</strong>
+                            <strong>3D:4H:15 Min</strong>
+                        </div>
+                        <div class="box3">
+                            <p>Claim Rewards</p>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="interst-container">
+                <div class="int-box">
+                    <strong>Interest Statistics</strong>
+                    <p>D W <span>M</span> Y</p>
+                </div>
+                <div class="interst-box">
+                    <img src="./Screenshot 2025-03-25 013200.png" alt="" class="graph">
+                </div>
+            </div>
+        </aside>
+    </section>
 </body>
 
 </html>

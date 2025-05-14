@@ -1,0 +1,39 @@
+.task-item {
+    display: flex;
+    border: 1px solid red;
+    gap: 20px;
+    max-width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.task-item span {
+    display: flex;
+    gap: 20px;
+}
+
+.task-item button {
+    height: 30px;
+}
+
+.task-item p {
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.69;
+}
+
+.disabled {
+    opacity: 0.69;
+    pointer-events: none;
+}
