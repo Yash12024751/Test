@@ -1,0 +1,111 @@
+ 
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: gray;
+
+        } 
+
+
+        input {
+            padding: 10px;
+            width: 250px;
+            font-size: 1rem;
+        }
+
+
+        button {
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            background-color: rgb(85, 123, 85);
+            color: white;
+            margin-left: 5px;
+        }
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f4f4f4;
+            margin: 10px auto;
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+
+        .delete {
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .task-done {
+            text-decoration: line-through;
+            color: gray;
+        }
+        div input {
+            text-align: center;
+        }
+  
+
+
+
+
+
+
+
+
+.task-item {
+    display: flex;
+    border: 1px solid red;
+    gap: 20px;
+    max-width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.task-item span {
+    display: flex;
+    gap: 20px;
+}
+
+.task-item button {
+    height: 30px;
+}
+
+.task-item p {
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.69;
+}
+
+.disabled {
+    opacity: 0.69;
+    pointer-events: none;
+}
+
