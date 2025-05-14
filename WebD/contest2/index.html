@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* overflow: scroll; */
+
+        }
+        body {
+            background-color: pink;
+        }
+
+        .head {
+            /* border: 3px solid red; */
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            /* border: 2px solid black; */
+            background-color: white;
+            height: 250px;
+            width: 35%;
+            border-radius: 10px;
+        }
+
+        .welcome {
+            color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 700px;
+            margin-top: 30px;
+        }
+
+        .click {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 200px;
+            margin-top: 20px;
+        }
+
+        .click-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid red; */
+            background-color: red;
+            margin-top: 10px;
+            border-radius: 10px;
+            width: 30%;
+            height: 70px;
+        }
+
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            gap: 5px;
+
+        }
+        div p a {
+            text-decoration: none;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="container">
+            <div class="welcome">
+                <p>Welcome to page 1</p>
+            </div>
+            <div class="click">
+                <p>Click the button below to go the next page.</p>
+            </div>
+            <div class="click-button">
+                <div class="arrow">
+                    <p><a href="./index2.html">Next </p></a>
+                    <img src="./img.svg" alt="" width="30px">
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>

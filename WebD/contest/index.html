@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: border box;
+        }
+
+        .nav {
+
+            background-color: #ffff;
+            border: 5em solid white;
+            width: 1024px;
+            height: 592px;
+
+        }
+
+        .conatiner {
+            background-color: rgb(219, 219, 237);
+            height: 592px;
+            width: 758px;
+        }
+
+        .stak {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .active border {
+            border: none;
+        }
+
+        p span {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        p u {
+            font-size: 0.8rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        .staking-container1 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cardano {
+            border: 1rem solid white;
+            background-color: white;
+            flex-direction:column ;
+            gap: 30px;
+            width: 150px;
+            height: 200px;
+            display: flex;
+            margin-top: 10px;
+            margin-left: 30px;
+            flex-wrap: wrap;
+
+        }
+
+        .cardano-box {
+            display: flex;
+
+            gap: 6px;
+            display: grid;
+            grid-template-columns: repeat(3, 4fr);
+            margin-top: 10px;
+            align-items: center;
+
+        }
+
+        .anuual {
+            /* display: flex; */
+            justify-content: space-evenly;
+        }
+     
+        .grid {
+
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+
+        }
+        .box1 {
+            border: 1rem solid white;
+            background-color: #ffff;
+            height: 80px;
+            width: 160px;
+        }
+        .box2 {
+            border: 1rem solid white;
+            background-color: #ffff;
+            height: 80px;
+            width: 160px;
+        }
+        .box3 {
+            border: 1rem solid white;
+            background-color: #ffff;
+            height: 80px;
+            width: 160px;
+        }
+        .box4 {
+            border: 1rem solid white;
+            background-color: #ffff;
+            height: 80px;
+            width: 160px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="conatiner">
+            <div class="stak">
+                <div class="staking-container1">
+
+                    <p><span>Staking offerings</span></p>
+                    <p><u>locked staking</u></p>
+                    <p>Defi staking</p>
+                    <p>
+                        <select name="" id="">
+                            <option class="active border">Active</option>
+                        </select>
+                    </p>
+                </div>
+                <p><span>Staking wallet</span></p>
+                <p>
+                    <select name="" id="">
+                        <option>USDT</option>
+                    </select>
+                </p>
+
+            </div>
+            <div class="cardano ">
+                <div class="cardano-box">
+                    <p>Cardano ADN</p>
+
+                    <p>APY 8.65</p>
+
+
+                </div>
+
+                <div class="anuual">
+                    <p>30.45%</p>
+                    <p>
+                    <div>Anual percenatge yield</div>
+                    </p>
+                </div>
+                <div class="minimum">
+                    <p>100 ADA</p>
+                    <p>
+                    <div>Minimum Stake</div>
+                    </p>
+                </div>
+                
+                <div class="grid">
+                   <div class="box1"></div>
+                   <div class="box2"></div>
+                   <div class="box3"></div>
+                   <div class="box4"></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+</body>
+
+</html>
